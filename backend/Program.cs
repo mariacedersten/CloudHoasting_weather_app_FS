@@ -3,7 +3,7 @@ using Microsoft.JSInterop.Infrastructure;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!"); // Using "anonomous functions"
+app.MapGet("/", () => "Hello Net24S!"); // Using "anonomous functions"
 app.MapGet("hellous/", HelloMehthod);
 
 app.Run();
@@ -23,3 +23,6 @@ string HelloMehthod()
 
 
 }
+
+
+// az webapp up --name maria-cedersten -g test1 --location westeurope --sku B1 --os-type linux
