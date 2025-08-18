@@ -24,5 +24,5 @@ string HelloMehthod()
 
 }
 
-
+// Deploy with:
 // az webapp up --name maria-cedersten -g test1 --location westeurope --sku B1 --os-type linux
