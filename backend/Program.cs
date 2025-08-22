@@ -14,7 +14,7 @@ app.MapGet("hellous/", GetHello);
 app.MapGet("/", () => "Hello Net24S!"); // Using "anonymous function"
 
 
-// 5) after run ... program will stop here to wait for GET/POPST/UPDATE calls..
+// 5) after run ... program will stop here to wait for GET/POST/UPDATE calls..
 app.Run();
 // -----------------------------------------------------
 
