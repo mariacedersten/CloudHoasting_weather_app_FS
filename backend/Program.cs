@@ -3,14 +3,16 @@ using Microsoft.JSInterop.Infrastructure;
 var builder = WebApplication.CreateBuilder(args);
 
 // 2)
-//we need to configuier builder before building (as an example), add contrpllers etc.)
+//we need to configure builder before building (as an example), add controllers etc.)
 
 // 3)
 var app = builder.Build();
 
 // 4)
-app.MapGet("/", () => "Hello Net24S!"); // Using "anonomous functions"
-app.MapGet("hellous/", HelloMehthod);
+// MAP.    ENPOINT <-> metod ()
+app.MapGet("hellous/", GetHello);
+app.MapGet("/", () => "Hello Net24S!"); // Using "anonymous function"
+
 
 // 5) after run ... program will stop here to wait for GET/POPST/UPDATE calls..
 app.Run();
@@ -33,8 +35,6 @@ string GetHello()
 
     var message = File.ReadAllText(helloPath);
     return "Read from FILE:\n\n" + message;
-
-
 }
 
 // Deploy with:
