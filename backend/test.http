@@ -7,4 +7,10 @@ GET http://localhost:5145/hellous
 ###
 GET  http://maria-cedersten.azurewebsites.net
 
+### 
+# this should give "Hello Net24S"
 
+GET  http://maria-cedersten.azurewebsites.net
+
+###
+GET https://maria-cedersten.azurewebsites.net/hellous
