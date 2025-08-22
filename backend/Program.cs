@@ -1,14 +1,27 @@
 using Microsoft.JSInterop.Infrastructure;
-
+// 1)
 var builder = WebApplication.CreateBuilder(args);
+
+// 2)
+//we need to configuier builder before building (as an example), add contrpllers etc.)
+
+// 3)
 var app = builder.Build();
 
+// 4)
 app.MapGet("/", () => "Hello Net24S!"); // Using "anonomous functions"
 app.MapGet("hellous/", HelloMehthod);
 
+// 5) after run ... program will stop here to wait for GET/POPST/UPDATE calls..
 app.Run();
+// -----------------------------------------------------
 
-string HelloMehthod()
+Console.WriteLine("This should never happen ... (is impossible, should be at least)");
+
+// we will never get here ...
+
+// What about these??
+string GetHello()
 {
     var helloFolder = new DirectoryInfo(Directory.GetCurrentDirectory());
     var helloPath = Path.Combine(helloFolder.FullName, "hello.txt");
