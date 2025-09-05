@@ -1,8 +1,12 @@
 GET http://localhost:5145
 
 ###
-
 GET http://localhost:5145/hellous
+
+###
+# (when starting from bin/debug/net9.0
+# port is 5000 for same reason)
+GET http://localhost:5000/hellous
 
 ###
 GET  http://maria-cedersten.azurewebsites.net
