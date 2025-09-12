@@ -47,6 +47,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: .net-app
+          path: artifact
       
       - name: Login to Azure
         uses: azure/login@v2
@@ -61,6 +62,7 @@ jobs:
         with:
           app-name: 'my-super-best-maria-cedersten-chapp'
           slot-name: 'Production'
-          package: .
+          package: artifact
           dotnet-version: '9.x'
           
+
