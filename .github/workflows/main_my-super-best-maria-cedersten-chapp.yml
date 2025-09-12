@@ -63,6 +63,6 @@ jobs:
           app-name: 'my-super-best-maria-cedersten-chapp'
           slot-name: 'Production'
           package: artifact
-          dotnet-version: '9.x'
           
+
 
